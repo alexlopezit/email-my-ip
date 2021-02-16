@@ -1,0 +1,48 @@
+{
+  "name": "email-my-ip",
+  "version": "1.0.0",
+  "description": "Email my public IP",
+  "main": "index.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "start": "tsc -w",
+    "test": "jest  --runInBand --forceExit",
+    "check:types": "tsc --noEmit",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexlopezit/email-my-ip.git"
+  },
+  "engines": {
+    "node": "14"
+  },
+  "keywords": [
+    "Email",
+    "Public IP"
+  ],
+  "author": "Alex Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexlopezit/email-my-ip/issues"
+  },
+  "homepage": "https://github.com/alexlopezit/email-my-ip#readme",
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.0",
+    "@types/public-ip": "^3.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint": "^7.20.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "dotenv": "^8.2.0",
+    "nodemailer": "^6.4.18",
+    "public-ip": "^4.0.3"
+  }
+}
